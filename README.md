@@ -7,7 +7,7 @@ Desenvolva os testes
 Implemente o processo de CI
 Faça o push da imagem no Docker Hub (seu-user/go-hpa)
 Faça o deploy da imagem no K8S (criando os arquivos de deployment e services)
-Cada réplica deverá consumir no mínimo 50m e no máximo 100m.
+Cada réplica deverá consumir no mínimo 50m e no máximo 100m.    
 
 2- Implemente o "hpa" para que esse deployment tenha as seguintes características:
 
