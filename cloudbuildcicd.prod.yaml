@@ -6,7 +6,7 @@ steps:
 
 - id: "CD - Construindo Imagem"
   name: 'gcr.io/cloud-builders/docker'
-  args: ['build','-t', 'gcr.io/$PROJECT_ID/go-hpa:$SHORT_SHA', '-f'', 'Dockerfile.prod', '.']
+  args: ['build','-t', 'gcr.io/$PROJECT_ID/go-hpa:$SHORT_SHA', '-f', 'Dockerfile.prod', '.']
 
 - id: "CD - Salvando Imagem"
   name: 'gcr.io/cloud-builders/docker'
