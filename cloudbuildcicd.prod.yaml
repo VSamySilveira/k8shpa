@@ -26,7 +26,7 @@ steps:
   args:
     - 'apply'
     - 'f'
-      'deployment-new.yaml'
+    - 'deployment-new.yaml'
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
     - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-docker-gohpa'
