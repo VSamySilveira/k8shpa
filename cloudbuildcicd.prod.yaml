@@ -10,7 +10,7 @@ steps:
 
 - id: "CD - Salvando Imagem"
   name: 'gcr.io/cloud-builders/docker'
-  args: ['push','-t', 'gcr.io/$PROJECT_ID/go-hpa:$SHORT_SHA']
+  args: ['push', 'gcr.io/$PROJECT_ID/go-hpa:$SHORT_SHA']
 
 - id: "CD - Ajustando os arquivos do k8s"
   name: 'gcr.io/cloud-builders/gcloud'
