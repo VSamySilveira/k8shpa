@@ -17,7 +17,7 @@ func raiz() string {
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "<html><body>"+raiz()+"</body></html>")
+	fmt.Fprintf(w, "<html><body>"+raiz()+"<br>This is the new version using CI and CD!</body></html>")
 }
 
 func main() {
