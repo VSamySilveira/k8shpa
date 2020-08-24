@@ -1,26 +1,18 @@
 # k8shpa
-# Projeto Kubernetes e hpa
-1- Nessa fase, você deverá implementar exatamente o mesmo algorítimo que foi implementado em PHP (no php-apache-hpa / looping somando a raiz quadrada), porém na linguagem Go Lang. Não esqueça de seguir os passos abaixo:
+# Projeto Deploy Continuo
+Parabéns! Você chegou a nossa fase final onde você consolidará seus conhecimentos participando de todo ciclo de deploy de uma aplicação.
 
-Nome do deployment, service e nome da imagem deverá se chamar: go-hpa
-Desenvolva os testes
-Implemente o processo de CI
-Faça o push da imagem no Docker Hub (seu-user/go-hpa)
-Faça o deploy da imagem no K8S (criando os arquivos de deployment e services)
-Cada réplica deverá consumir no mínimo 50m e no máximo 100m.    
+Nessa fase, o objetivo principal será fazer o deploy automático da aplicação já desenvolvida em Go Lang nas fases passadas.
 
-2- Implemente o "hpa" para que esse deployment tenha as seguintes características:
+As regras do processo são:
+- Quando qualquer push ou uma PR for relizada no Github em um branch diferente do Master, o processo de CI tem que ser executado.
+- Quando um merge ou um push entrarem no branch Master, o processo de CI/CD deve ser chamado, fazendo assim o deploy de forma automática no Kubernetes.
 
-O processo de escala inicia quando a CPU passar de 15%
-Quantidade mínima de pods: 1
-Quantidade máxima de pods: 6
+Faça o upload de todo código em um repositório, incluindo os do Cloudbuild, para que possamos fazer a avaliação.
 
-3- Crie um POD e faça requisições através de um looping infinito e verifique se o autoscaler está funcionando corretamente.
-
-# Formato de Entrega:
-
-Crie um repositório no github contendo tanto o projeto em Go (com pelo menos uma PR verificada através do processo de CI), bem como os arquivos yamls necessários para executar todo o processo.
+Boa sorte e conte sempre conosco!
 
 
 # Imagem no Docker Hub
 https://hub.docker.com/repository/docker/samysilveira/go-hpa
+
